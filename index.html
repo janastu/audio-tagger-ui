@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0">
+    <!--link rel="stylesheet" href="css/bootstrap.min.css"-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.icon-large.min.css">
+    <link rel="stylesheet" href="css/theme.css">
+  </head>
+  <body>
+    <header>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle
+          collapsed" data-toggle="collapse"
+          data-target="#navbar" aria-expanded="false"
+          aria-controls="navbar">
+          <span class="sr-only">Toggle
+            navigation</span>
+          <span
+            class="icon-bar"></span>
+          <span
+            class="icon-bar"></span>
+          <span
+            class="icon-bar"></span>
+        </button>
+        <a
+          class="navbar-brand"
+          href="#">Audio Tagger</a>
+      </div>
+      <div
+        id="navbar"
+        class="navbar-collapse
+        collapse">
+        <!--form
+          class="navbar-form
+          navbar-right">
+          <div
+            class="form-group">
+            <input
+            type="text"
+            placeholder="Email"
+            class="form-control">
+          </div>
+          <div
+            class="form-group">
+            <input
+            type="password"
+            placeholder="Password"
+            class="form-control">
+          </div>
+          <button
+            type="submit"
+            class="btn
+            btn-success">Sign
+            in</button>
+        </form-->
+      </div><!--/.navbar-collapse
+      -->
+    </div>
+    </nav>
+    </header>
+
+    <section class="container col-md-8 col-lg-8 col-sm-8 col-xs-8" id="audio-list">
+
+    <div class="row">
+    <table class="table" id="dashboard" >
+      <thead>
+        <th></th>
+        <th> Name </th>
+        <th> User </th>
+        <th> Upload time </th>
+        <th> Tags </th>
+      </thead>
+      <tbody id="dashboard-body">
+      </tbody>
+    </table>
+  </div>
+
+  </section>
+
+  <section class="container col-md-4 col-lg-4 col-sm-4 col-xs-4"
+  id="tag-cloud">
+  <div class="row">
+    <h4> Tag Cloud </h4>
+    <ul>
+    </ul>
+  </div>
+  </section>
+
+  <footer>
+  <span> Copyright </span>
+    </footer>
+
+
+    <!-- Templates -->
+    <script type="text/template" id="tag-cloud-template">
+      <li><%= tags %> </li>
+    </script>
+    <script type="text/template" id="audio-item-template">
+        <tr>
+          <th><button type="button" class="btn play-button" >
+              <span class="glyphicon glyphicon-play"></span>
+          </button></th>
+          <td><%= filename %> </td>
+          <td><%= username %> </td>
+          <td><%= time %></td>
+          <td><%= tags %> </td>
+          <td><!--button type="button" class="btn fav-button">
+              <span class="glyphicon glyphicon-star-empty">
+              <span class="glyphicon glyphicon-star hide">
+              </span>
+            </button-->
+             <button type="button" class="btn share-button">
+ <span class="glyphicon glyphicon-retweet">
+              </span>
+            </button>
+             <button type="button" class="btn options-button">
+ <span class="glyphicon glyphicon-option-vertical">
+              </span>
+            </button></td>
+        </tr>
+      </script>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="js/underscore-min.js"> </script>
+    <script src="js/backbone-min.js"> </script>
+    <script src="js/MOCK_DATA.json"> </script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <script src="js/theme.js"> </script>
+  </body>
+</html>

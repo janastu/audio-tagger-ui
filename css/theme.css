@@ -1,0 +1,17 @@
+header {
+  height: 50px;
+}
+
+#audio-list {
+  height: 1080px;
+  margin-top:15px;
+
+}
+
+#tag-cloud {
+  height: 1080px;
+  margin-top: 5px;
+}
+#tag-cloud ul {
+  list-style: none;
+}
